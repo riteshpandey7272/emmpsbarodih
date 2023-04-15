@@ -1,0 +1,106 @@
+
+.s {
+  /* color: white; */
+  /* background-color: hsl(182, 74%, 59%); */
+  font-family: 'Montserrat', sans-serif
+}
+.slider {
+  max-width: 1700px;
+  height: 700px;
+  position: relative;
+  margin: 1px auto;
+
+  /* background-color: hsl(182, 74%, 59%); */
+}
+
+.slider div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  margin-top: 2rem;
+
+}
+
+.slide1 {
+  background: url(/../assets/ForDashboard/img/slide/Screenshot2.png)no-repeat
+    center;
+  background-size: cover;
+  animation: fade 15s infinite;
+  -webkit-animation: fade 15s infinite;
+}
+.slide2 {
+  background: url(https://akm-img-a-in.tosshub.com/aajtak/images/story/201409/ssa_650_093014110840.jpg?size=948:533)no-repeat
+    center;
+  background-size: cover;
+  animation: fade2 15s infinite;
+  -webkit-animation: fade2 15s infinite;
+}
+.slide3 {
+  background: url(/../assets/ForDashboard/img/slide/1st.jpeg)no-repeat
+    center;
+  background-size: cover;
+  animation: fade3 15s infinite;
+  -webkit-animation: fade3 15s infinite;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  33.333% {
+    opacity: 0;
+  }
+  66.666% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade2 {
+  0% {
+    opacity: 0;
+  }
+  33.333% {
+    opacity: 1;
+  }
+  66.666% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fade3 {
+  0% {
+    opacity: 0;
+  }
+  33.333% {
+    opacity: 0;
+  }
+  66.666% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@media (max-width: 820px){
+  .slider {
+    max-width: 700px;
+    height: 320px;
+    position: relative;
+    margin: 1px auto;
+    margin-top: 1.5rem;
+    /* background-color: hsl(182, 74%, 59%); */
+  }
+
+  .slider div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+  }
+}
+
